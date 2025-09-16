@@ -15,9 +15,19 @@ class Vector2Int {
     this.y += other.y;
   }
   
+  public void add(int x, int y) {
+    this.x += x;
+    this.y += y;
+  }
+  
   public void sub(Vector2Int other) {
     this.x -= other.x;
     this.y -= other.y;
+  }
+  
+  public void sub(int x, int y) {
+    this.x -= x;
+    this.y -= y;
   }
   
   public void mult(int value) {
