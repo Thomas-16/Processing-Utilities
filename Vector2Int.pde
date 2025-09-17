@@ -47,8 +47,14 @@ class Vector2Int {
   public float mag() {
     return sqrt(this.sqrMag());
   }
+  
+  public static Vector2Int one() { return new Vector2Int(1, 1); }
+  public static Vector2Int zero() { return new Vector2Int(0, 0); }
+  public static Vector2Int up() { return new Vector2Int(0, -1); }
+  public static Vector2Int down() { return new Vector2Int(0, 1); }
+  public static Vector2Int left() { return new Vector2Int(-1, 0); }
+  public static Vector2Int right() { return new Vector2Int(1, 0); }
 }
-
 
 Vector2Int add(Vector2Int one, Vector2Int other) {
   return new Vector2Int(one.x + other.x, one.y + other.y);
